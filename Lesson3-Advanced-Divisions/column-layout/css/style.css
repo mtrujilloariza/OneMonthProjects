@@ -6,8 +6,8 @@ Developed @ One Month in NYC
 
 
 
-/*----------------------------------------------------------------------------- 
-=01 BASE STYLES 
+/*-----------------------------------------------------------------------------
+=01 BASE STYLES
 -----------------------------------------------------------------------------*/
 
 /* Box Model Hack */
@@ -24,8 +24,44 @@ Developed @ One Month in NYC
 
 
 
-/*----------------------------------------------------------------------------- 
-=02 LAYOUT 
+/*-----------------------------------------------------------------------------
+=02 LAYOUT
 -----------------------------------------------------------------------------*/
 
+#container {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+#header {
+	background: Silver;
+	padding: 50px;
+}
+#main {
+	background: SkyBlue;
+	padding: 50px;
+	width: 700px;
+	float: left;
+	flex: 1;
+}
+#sidebar {
+	background: Pink;
+	padding: 50px;
+	width: 300px;
+	float: left;
+	height: 100%;
+	flex: 1;
+}
+#footer {
+	background: PeachPuff;
+	padding: 50px;
+}
 
+.alignleft {
+	float: left;
+	margin: 0px 15px 15px 0px;
+}
+
+.alignright {
+	float: right;
+	margin: 0px 0px 15px 15px;
+}
