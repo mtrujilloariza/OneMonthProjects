@@ -4,8 +4,13 @@
 
 
 body {
-  background: #DDD;
+  background: url('../images/space-background.png');
   font-family: 'Open Sans', arial, sans-serif;
+
+    /* Full Page Background Receipe */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 * {
@@ -48,7 +53,7 @@ h1, h2 {
 
 h1 {
 
-  font-size: 16px;
+  font-size: 3rem;
 }
 
 h2 {
@@ -58,12 +63,38 @@ h2 {
 /*
  * Container Styles
 */
-
 .container {
   width: 600px;
   margin: 100px auto;
-  background: #FFF;
+}
+.hero {
+    line-height: 0;
+}
+.hero img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
 }
 
+aside.left {
+    float: left;
+}
 
+aside.right {
+    float: right;
+}
 
+aside {
+    margin-right: 1.5rem;
+    margin-bottom: 0.625rem;
+}
+
+section.intro {
+    background: #fff;
+}
+
+section.contact{
+  background: #e6e9ea
+}
+section.intro, section.contact {
+    padding: 40px;
+}
