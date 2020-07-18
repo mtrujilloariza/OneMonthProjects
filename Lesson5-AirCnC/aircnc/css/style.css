@@ -32,9 +32,82 @@ strong {
   font-weight: 600;
 }
 
-
 /*
- * Button styles
+ * header and hero styles
+*/
+
+header {
+  background: #FFF;
+}
+ header .logo {
+   border-right: .1px solid #DCE0E0;
+ }
+
+ .hero img {
+   width: 100%;
+ }
+
+ h1 {
+   font-size: 22px;
+   color: #666A6C;
+   font: openSans;
+ }
+
+ .info {
+   background: #FFF;
+   text-align: center;
+   padding: 25px;
+ }
+
+ .info h1 {
+  margin-bottom: 5px;
+ }
+
+ .info .profile {
+  margin-bottom: 24px;
+ }
+
+ .info .owner-details img {
+    border-radius: 50%;
+    margin-bottom: 6px;
+ }
+
+ .info h2.relationship, .info h2.name{
+    color: #909597;
+    margin-bottom: 3px;
+ }
+
+ .info h2.name{
+   font-weight: bold;
+ }
+
+ .info p.location {
+  margin-bottom: 20px;
+ }
+
+ .info .icon {
+   float: left;
+   width: 33.3%;
+   padding: 5px;
+ }
+
+ .info .icon img {
+  height: 30px;
+  margin-bottom: 3px;
+ }
+
+ .info .booking h2 {
+   font-weight: 600;
+   font-size: 22px;
+   margin-bottom: 13px;
+ }
+
+ .info .booking h2 .time {
+  font-size: 16px;
+ }
+
+ /*
+ * Button styless
 */
 
 .button {
@@ -48,5 +121,148 @@ strong {
   width: 95%;
   margin: 0 auto;
 }
+
+/*
+ * Details styles
+*/
+
+.details {
+  padding: 1.25rem;
+}
+
+.details h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: rgb(86, 90, 92);
+}
+
+.details h4 {
+  margin-bottom: 0.625rem;
+}
+
+.details li {
+  margin-bottom: 0.3125rem;
+}
+
+.details section {
+  border-bottom: 1px solid rgb(220, 224, 224);
+  padding: 1rem 0 1.25rem 0;
+}
+
+.details .about {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.details .about p {
+  text-align: left;
+}
+
+.details .about a.contact {
+  margin: 0.9375rem 0; /* 15px / 16px */
+  display: block;
+}
+
+.details .photos img {
+  width: 100%;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+
+ @media only screen and (min-width: 1060px) {
+
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+    .column {
+      float: left;
+    }
+
+    .button {
+      width: 275px;
+      margin: auto;
+    }
+
+    .info h1 {
+      margin-bottom: 11px;
+    }
+    
+    .info h2 {
+    margin-bottom: 3px;
+    }
+
+    .info .profile {
+      width: 660px;
+      border-right: 1px solid #DCE0E0;
+    }
+
+    .info .booking {
+      width: 380px;
+    }
+
+    .info .owner-details {
+      width: 20%;
+    }
+
+    .info .pet-details {
+      width: 80%;
+      text-align: left;
+    }
+
+    .info .pet-details .icon {
+      width: inherit;
+      margin-right: 50px;
+    }
+    
+    .info .pet-details .icon img {
+      display: block;
+      margin: 3px auto 3px;
+    }
+
+      /*
+   * .details styles
+  */
+
+  .details .main {
+    width: 690px;
+  }
+
+  .details h4 {
+    width: 46px;
+  }
+
+  .details .about {
+    text-align: left;
+  }
+
+  .details .care .column, .details .games .column {
+    margin-right: 5.9rem;
+  }
+
+  .details .games li img {
+    padding-right: 0.5rem;
+  }
+
+  /*
+   * photo styles
+  */
+
+  .details .photos {
+    text-align: center;
+  }
+
+  .details .photos img {
+    display: inline;
+    width: 200px;
+    margin: 0 0.85rem;
+  }
+ }
+
+
 
 
