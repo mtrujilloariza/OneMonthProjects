@@ -6,7 +6,6 @@ function getInput() {
 }
 
 document.querySelector(".js-submit").addEventListener('click', function () {
-    alert(getInput());
     SoundCloudAPI.getTrack(getInput());
 })
 
